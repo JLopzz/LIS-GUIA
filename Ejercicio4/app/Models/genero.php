@@ -2,15 +2,15 @@
 
 use CodeIgniter\Model;
 
-class ModCust extends Model
+class Genero extends Model
 {
-  protected $table      = 'pelicula';
-  protected $primaryKey = 'idpelicula';
+  protected $table      = 'genero';
+  protected $primaryKey = 'ididgenero';
 
   protected $returnType = 'array';
   protected $useSoftDeletes = false;
 
-  protected $allowedFields = ['titulopelicula', 'titulooriginal', 'duracion'];
+  protected $allowedFields = ['ididgenero', 'generopelicula'];
 
   protected $useTimestamps = false;
   protected $createdField  = '';
