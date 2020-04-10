@@ -1,23 +1,19 @@
 <?php namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\ModCust;
+use App\Models\Pelicula;
 
 class Home extends BaseController
 {
 	public function index()
 	{
+		$pel = new Pelicula();
 		
-		$mod = new ModCust();
+		$data = [
+			'pelicula'=>$pel->find(),
+		];
 
-		$builder = $mod->builder();
-		
-		$select = $mod->find(2);
-		$a = view('welcome_message');
-		$select2 = $builder -> where('genero.idgenero',2);
-		print_r($select2);
-		//print_r($select);
-		//return $a;
+		return view('main',$data);
 	} 
 
 	//--------------------------------------------------------------------
