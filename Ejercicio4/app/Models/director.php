@@ -10,7 +10,7 @@ class Director extends Model
   protected $returnType = 'array';
   protected $useSoftDeletes = false;
 
-  protected $allowedFields = ['nombre', 'iddirector', 'nacionalidad'];
+  protected $allowedFields = ['nombre','nacionalidad'];
 
   protected $useTimestamps = false;
   protected $createdField  = '';

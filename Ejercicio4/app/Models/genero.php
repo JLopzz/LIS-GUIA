@@ -10,7 +10,7 @@ class Genero extends Model
   protected $returnType = 'array';
   protected $useSoftDeletes = false;
 
-  protected $allowedFields = ['ididgenero', 'generopelicula'];
+  protected $allowedFields = ['generopelicula'];
 
   protected $useTimestamps = false;
   protected $createdField  = '';

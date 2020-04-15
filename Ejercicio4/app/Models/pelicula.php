@@ -11,9 +11,9 @@ class Pelicula extends Model
   protected $useSoftDeletes = false;
 
   protected $allowedFields = [
-    'idpelicula','titulopelicula','descripcion',
-    'imgpelicula', 'titulooriginal', 'duracion',
-    'idgenero'
+    'titulopelicula', 'descripcion', 'imgpelicula',
+    'titulooriginal', 'duracion', 'idgenero',
+    'iddirector'
   ];
 
   protected $useTimestamps = false;
