@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 2</title>
-</head>
-<body>
-  <h1>Ejercicio 2</h1>
-</body>
-</html>
+<?php session_start();
+
+    if(isset($_SESSION['usuario'])) {
+        header('location: principal.php');
+    }else{
+        header('location: login.php');
+    }
+
+
+?>
