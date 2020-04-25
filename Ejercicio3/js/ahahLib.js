@@ -1,5 +1,4 @@
 
-
 function callAHAH(url, pageElement, callMessage, errorMessage) {
    document.getElementById(pageElement).innerHTML = callMessage;
    try {
@@ -11,19 +10,17 @@ function callAHAH(url, pageElement, callMessage, errorMessage) {
          /* Versiones anteriores de Internet Explorer IE */
          req = new ActiveXObject("Msxml2.XMLHTTP");  
       } 
-	  catch (e) {
+	   catch (e) {
          try {
             /* Otras versiones de Internet Explorer IE */
             req = new ActiveXObject("Microsoft.XMLHTTP");  
          } 
-		 catch (E) {
+		   catch (E) {
             req = false;
          } 
       } 
    }
-   req.onreadystatechange = function() {
-                               responseAHAH(pageElement, errorMessage);
-                            };
+   req.onreadystatechange = ()=> responseAHAH(pageElement, errorMessage);
    req.open("GET", url, true);
    req.send(null);
 }

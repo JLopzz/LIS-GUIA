@@ -5,7 +5,7 @@
 	$db = "lenguajes";
 
 	//Estableciendo conexion con el servido MySQL
-	$cn = new mysqli($host, $user, $pass, $db, "3308");
+	$cn = new mysqli($host, $user, $pass, $db);
 
 	// $cn = new mysqli($host, $user, $pass, $db,); // <-- Usar esta si no funciona la conexion a la base de datos
 
