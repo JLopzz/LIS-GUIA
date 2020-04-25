@@ -165,11 +165,7 @@ INSERT INTO director (nombre, nacionalidad)  VALUES
   ('Barry Sonnenfeld', 'Estadounidense'),
   ('Anne Fletcher', 'Estadounidense'),
   ('Frank Darabont', 'Franc'),
-  ('Peter Jackson', 'Neozeland'),
-  ('George Lucas', 'Estadounidense'),
-  ('Manoj Nelliyattu Shyamalan', 'Indu'),
-  ('Gabriele Muccino', 'Italiano'),
-  ('Frank Coraci', 'Estadounidense');
+  ('Peter Jackson', 'Neozeland');
 INSERT INTO genero (generopelicula) VALUES 
   ('Accion'),
   ('Drama'),
@@ -180,9 +176,6 @@ INSERT INTO genero (generopelicula) VALUES
   ('Familiar'),
   ('Infantil');
 INSERT INTO pelicula (titulopelicula, descripcion, imgpelicula, titulooriginal, duracion, idgenero, iddirector) VALUES 
-  ('Percy Jackson y el Ladron del Rayo', 'La historia narra la vida de un estudiante que descubre ser hijo de Poseidon, a raiz de esto se ve envuelto en una carrera contra el tiempo para impedir que los dioses griegos inicien una guerra que tiene como campo de batalla el continente americano de hoy en d&iacute;a.', 'img/percy.jpg', 'Percy Jackson & the Olympians: The lightning thief', '119 min', 1,1),
-  ('Precious', 'En Harlem, una adolescente analfabeta con sobre peso, quien ademas esta embarazada de su segundo hijo es invitada para inscribirse a una escuela alternativa. Este acontecimiento le da esperanzas de que su vida pueda girar en una nueva direccion.', 'img/precious.jpg', 'Precious: Based on the novel "Push" by Sapphire', '109 min', 2,2),
-  ('El Imaginario Mundo Del Doctor Parnassus', 'El Doctor Parnassus tiene una inexplicable capacidad de poder guiar la imaginacion de los demas, pero a su vez el guarda un temible secreto. Adicto al juego, muchos a&ntilde;os atras, apostocon el demonio, Mr. Nick, juego que lo convirtioen inmortal. Pero siglos despues el doctor conoce a su amor verdadero, y vuelve a realizar otro pacto con el diablo, esta vez intercambiando su inmortalidad por su juventud, con la unica condicion que cuando su hija llegase a la edad de 16 a&ntilde;os, pasaria a ser propiedad del diablo.', 'img/doc.jpg', 'The Imaginarium Of Doctor Parnassus', '122 min', 3,3),
   ('PD. Te Amo', 'La vida de Holly (Hilary Swank) se ve truncada cuando su marido, Gerry (Gerard Butler),muere. Incapaz de salir adelante por simisma, su madre y sus amigos intentan animarla. Un dia, despues de su 30 cumplea&ntilde;os, Holly recibe una carta de Gerry animandola a salir, a divertirse, a seguir adelante. Cada mes recibirauna carta firmada con un "Posdata: Te amo", que le devolveran las ganas de vivir.', 'img/ps.jpg', 'P.S. I love you', '115 min', 4,4),
   ('Efecto Mariposa', 'Evan Treborn, un joven que se esta esforzando por superar unos dolorosos recuerdos de su infancia, descubre una tecnica que le permite viajar atras en el tiempo y ocupar su cuerpo de ni&ntilde;o para poder cambiar el curso de su dolorosa historia. Sin embargo tambien descubre que cualquier minimo cambio en el pasado altera enormemente su futuro.', 'img/efecto.jpg', 'The Butterfly Effect', '100 min', 5,5),
   ('Vacaciones en familia', 'Un ejecutivo preocupado por no perderse unas vacaciones con su familia decide llevarlos a vacacionar al mismo lugar donde tendr&aacute; una importante reuni&oacute;n de trabajo, pero sin dec&iacute;rselos', 'img/vacacionesenfamilia.jpg', 'RV', '98 min', 7,6),
