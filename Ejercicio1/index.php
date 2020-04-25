@@ -3,7 +3,7 @@ include('conexion.php');// conexion a la bd
 //$sql='SELECT * FROM movies ORDER BY ID';
 //$sentencia= $conexion->prepare($sql);
 //$sentencia->execute();
-$listPer=$conexion->query("SELECT * FROM movies");// lista los registros de la tabla
+$listPer = $conexion->query("SELECT * FROM movies");// lista los registros de la tabla
 // $sentencia= $conexion->prepare($listPer);
 // $sentencia->execute();
 
@@ -20,6 +20,7 @@ $paginas=$totalpeliculas/3;
 
 if(isset($_POST['insertar']))//si apretamos el boton..
 {
+	print_r($_FILES);
 	$cargarPoster=($_FILES['poster']['tmp_name']);//carga el archivo
 	$poster=fopen($cargarPoster, 'rb');//leer el archivo como binario
 	$titulo=$_POST['titulo'];
@@ -75,7 +76,7 @@ if(isset($_POST['insertar']))//si apretamos el boton..
 		echo $iniciar;	
 
 		$sql_peliculas = 'SELECT * FROM movies LIMIT :iniciar,:npeliculas';
-		$sentencia_pelis=$conexion->prepare($sql_peliculas);
+		$sentencia_pelis = $conexion->prepare($sql_peliculas);
 		$sentencia_pelis->bindParam(':iniciar',$iniciar,PDO::PARAM_INT);
 		$sentencia_pelis->bindParam(':npeliculas',$peliculasxpagina,PDO::PARAM_INT);
 		$sentencia_pelis->execute();
