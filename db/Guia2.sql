@@ -1,3 +1,10 @@
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+
 /********************EJERCICIO 1*********************/
 --
 -- Base de datos: `cine01`
@@ -168,3 +175,6 @@ INSERT INTO pelicula (titulopelicula, descripcion, imgpelicula, titulooriginal, 
   ('Milagros inesperados', 'La pel&iacute;cula narra la vida de Paul Edgecomb (Tom Hanks), quien siendo un anciano de 108 a&ntilde;os, cuenta su historia como oficial de la Milla Verde, una penitenciar&iacute;a del estado de Luisiana, durante la d&eacute;cada de 1930. Edgecomb cuenta que entre sus presos tuvo un personaje con poderes sobrenaturales, capaz de sanar a personas.', 'img/greenmille.jpg', 'The Green Mile', '189 min', 2,8);
 UPDATE pelicula SET titulopelicula='El efecto mariposa' WHERE idpelicula=5;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
