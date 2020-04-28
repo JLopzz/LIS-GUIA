@@ -1,0 +1,20 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body{
+	background-color: #21A6BC;
+	color: antiquewhite;
+}
+
+
+#nombre{
+	color: blueviolet;
+}
+
+.nav-item:hover{
+	color: blueviolet
+}
