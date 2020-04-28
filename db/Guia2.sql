@@ -1,24 +1,4 @@
 /********************EJERCICIO 1*********************/
--- phpMyAdmin SQL Dump
--- version 5.0.1
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 21-04-2020 a las 07:33:08
--- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.2
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Base de datos: `cine01`
 --
@@ -59,7 +39,6 @@ ALTER TABLE `movies`
 --
 ALTER TABLE `movies`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
 /********************EJERCICIO 2*********************/
 
 DROP DATABASE IF EXISTS `login`;
@@ -91,7 +70,6 @@ CREATE TABLE IF NOT EXISTS `login` (
 INSERT INTO `login` (`correo`, `usuario`, `clave`) VALUES
 ('pedro@.gamil.com', 'pedro', '4dff4ea340f0a823f15d3f4f01ab62eae0e5da579ccb851f8db9dfe84c58b2b37b89903a740e1ee172da793a6e79d560e5f7f9bd058a12a280433ed6fa46510a'),
 ('cristian@gmail.com', 'cristian', '3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7ab1c1eb8b85103e3be7ba613b31bb5c9c36214dc9f14a42fd7a2fdb84856bca5c44c2');
-COMMIT;
 
 
 /********************EJERCICIO 3*********************/
@@ -183,8 +161,3 @@ INSERT INTO pelicula (titulopelicula, descripcion, imgpelicula, titulooriginal, 
   ('Milagros inesperados', 'La pel&iacute;cula narra la vida de Paul Edgecomb (Tom Hanks), quien siendo un anciano de 108 a&ntilde;os, cuenta su historia como oficial de la Milla Verde, una penitenciar&iacute;a del estado de Luisiana, durante la d&eacute;cada de 1930. Edgecomb cuenta que entre sus presos tuvo un personaje con poderes sobrenaturales, capaz de sanar a personas.', 'img/greenmille.jpg', 'The Green Mile', '189 min', 2,8);
 UPDATE pelicula SET titulopelicula='El efecto mariposa' WHERE idpelicula=5;
 
-
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
